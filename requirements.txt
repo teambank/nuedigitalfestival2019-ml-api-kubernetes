@@ -1,0 +1,8 @@
+# Nur fuer openshift 
+# gunicorn funktioniert nicht unter Windows
+scikit-learn
+pandas
+flask
+flask-restplus
+dvc[s3]
+gunicorn

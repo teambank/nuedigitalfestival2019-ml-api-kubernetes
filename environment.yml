@@ -1,0 +1,16 @@
+name: nuedigitalmlapi
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipykernel
+  - python=3.6
+  - numpy
+  - scikit-learn
+  - pandas
+  - pylint
+  - pytest
+  - flask-restplus
+  - pip:
+    - bandit
+    - safety

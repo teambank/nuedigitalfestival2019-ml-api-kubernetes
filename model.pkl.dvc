@@ -1,0 +1,19 @@
+md5: f3094c65ab147cc4c243a1d2e52e3603
+cmd: python -m nuedigitalmlapi.train
+wdir: .
+deps:
+- md5: 6bb324c4a95267d7c4187e7590bdc5da
+  path: data/interim/model_dev_data.pkl
+- md5: 21b0acbc498e967b69121c309b49616f
+  path: nuedigitalmlapi/train.py
+outs:
+- md5: ed67980e1fae5cc9ec4a73a773b49f1c
+  path: models/model.pkl
+  cache: true
+  metric: false
+  persist: false
+- md5: 5af8a516d44fdd2b3258dd88e0108ba4
+  path: score.json
+  cache: false
+  metric: true
+  persist: false

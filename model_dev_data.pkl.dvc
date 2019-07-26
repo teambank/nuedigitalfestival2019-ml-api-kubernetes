@@ -1,0 +1,12 @@
+cmd: python Trainingsdaten_aufbereiten.py
+deps:
+- path: Trainingsdaten_aufbereiten.py
+  md5: 239116d5fc246a4606a417962dc727f9
+outs:
+- cache: true
+  metric: false
+  path: ../data/interim/model_dev_data.pkl
+  md5: 6bb324c4a95267d7c4187e7590bdc5da
+  persist: false
+wdir: notebooks
+md5: 73f7dcb970a72c168287373f0a33b0d9

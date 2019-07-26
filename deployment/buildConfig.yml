@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: BuildConfig
+metadata:
+  name: nuedigitalmlapi-build
+  labels:
+    app: nuedigitalmlapi
+spec:
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'nuedigitalmlapi:latest'
+  resources:
+    limits:
+      memory: 4Gi
+  source:
+    git:
+      uri: https://github.com/mbunse/nuedigitalmlapi.git
+    sourceSecret:
+      name: "github"
+    secrets:
+      - secret:
+          name: aws-credentials
+      - secret:
+          name: dvc-config
+        destinationDir: .dvc/
+  strategy:
+    dockerStrategy:
+    type: Docker

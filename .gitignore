@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# DotEnv configuration
+.env
+
+# VS Code
+.vscode/
+
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
+
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
+*.ipynb
+
+debug.log
+
+*.egg-info
+
+.pytest*
+
+.doit*
+
+~$*
+
+.dvc
+
+credentials
